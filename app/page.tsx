@@ -45,7 +45,7 @@ export default function App() {
     <main className="min-h-screen bg-[#f7f8fa] text-[#181818]">
       <header className="app-header">
         <button className="brand" onClick={() => setPage("home")} aria-label="返回首页">
-          <span className="brand-mark"><img src="/favicon.svg" alt="" /></span>
+          <span className="brand-mark"><img src={`${import.meta.env.BASE_URL}favicon.svg`} alt="" /></span>
           <span>文字替换助手</span>
         </button>
         <nav className="top-nav" aria-label="主导航">
